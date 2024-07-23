@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="/code.css" />
+  </head>
+  <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<button class="email-btn" >Email</button>
+<div class="email-div">autonom@yahoo.com</div>
+<button class="whatsapp-btn" >Whatsapp</button>
+<div class="whatsapp">+40 725 163 154</div>
+    <nav>
+      <div class="footer">
+        <ul>
+          <li>
+            <a
+              href="/main.html"
+              class="menu-item"
+              id="rent-a-car"
+              target="_blank"
+              >Rent a Car</a
+            >
+          </li>
+          <li>
+            <a
+              href="/van.html"
+              class="menu-item"
+              id="rent-a-van"
+              target="_blank"
+              >Rent a Van</a
+            >
+          </li>
+          <li>
+            <a
+              href="/leasing.html"
+              class="menu-item"
+              id="leasing-operational"
+              target="_blank"
+              >Leasing Operational</a
+            >
+          </li>
+          <li>
+            <a href="/rutiera.html" class="menu-item" id="asistenta-rutiera"
+              >Asistenta rutiera</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-rutiera-main">
+        <a href=""><img class="logo" src="/logo.jpg" alt="" /></a>
+        <button class="activare-card">Activare card</button>
+        <button class="telefon-rutiera">+02414141</button>
+        <button onclick="openNav()" class="open-side-menu">
+          <div class="bars">
+            <p class="bar-van" id="rutiera-menu"></p>
+            <p class="bar-van" id="rutiera-menu"></p>
+            <p class="bar-van" id="rutiera-menu"></p>
+          </div>
+        </button>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+
+          <div class="overlay-content">
+            <a href="/about.html" target="_blank">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="first-hr" />
+
+      <div class="second-footer-rutiera">
+        <img src="/poze/rutiera-poza.jpg" alt="" class="rutiera-poza" />
+        <p class="national-rutiera">Asistenta rutiera la nivel <br> national si international</p>
+        <p class="tractare">&#x2713; Tractare</p>
+        <p class="depanare">&#x2713; Depanare</p>
+        <p class="masina-inlocuire">&#x2713; Masina de inlocuire</p>
+
+        <div class="bara-verticala"></div>
+        
+        <p class="abonamente">Abonamente nationale <br> de asistenta rutiera</p>
+        <p class="abonamente-type">Autonom Assistance iti pune la dispozitie 3 pachete de mobilitate, adaptate nevoilor tale, pentru a fi intotdeauna pregatit pentru evenimentele neprevazute din trafic</p>
+       
+        
+        <div class="pachete-rutiera">
+        <img src="/poze/car-hook.jfif" alt="" class="car-hook">
+        <p class="pachet1"> <b>Standard </b</p>
+         <ul class="lista">
+         <li>&#x2022; Asistenta rutiera 24/7</li> <br>
+         <li>&#x2022; Tractare in caz de accient</li> <br>
+         <li>&#x2022; Acoperire nationala</li>
+         </ul>
+         <button class="info-button"></button>
+         <p class="price-pachet">35 RON/an</p>
+         <button class="buy">CUMPARA</button>
+
+
+
+
+        </div>
+
+        <div class="pachete-rutiera2">
+          <img src="/poze/platform-car.jfif" alt="" class="car-hook">
+          <p class="pachet2"> <b>Plus </b</p>
+           <ul class="lista2">
+           <li>&#x2022; Asistenta rutiera 24/7</li> <br>
+           <li>&#x2022; Tractare in caz de accient sau defectiune mecanica</li> <br>
+           <li>&#x2022; Acoperire nationala</li> <br>
+           <li>&#x2022; Masina de inlocuire 3 zile</li>
+           </ul>
+           <button class="info-button-plus"></button>
+           <p class="price-pachet2">89 RON/an</p>
+           <button class="buy2">CUMPARA</button>
+        </div>
+
+        <div class="pachete-rutiera3">
+          <img src="/poze/premium.jfif" alt="" class="car-hook">
+          <p class="pachet3"> <b>Premium </b</p>
+           <ul class="lista3">
+           <li>&#x2022; Asistenta rutiera 24/7</li> <br>
+           <li>&#x2022; Tractare in caz de accient sau defectiune mecanica</li> <br>
+           <li>&#x2022; Acoperire nationala</li> <br>
+           <li>&#x2022; Masina de inlocuire 3 zile</li>
+        
+           </ul>
+           <button class="info-button3"></button>
+           <p class="price-pachet3">122 RON/an</p>
+           <button class="buy3">CUMPARA</button>
+        </div>
+       
+
+        <div class="overlay-rutiera"></div>
+
+<div class="popup">
+  <button class="close">&times;</button>
+  <h2 class="abonament-standard">Abonament Standard</h2> 
+    <ul class="lista-popup">&#x2713; Tractare in caz de accident pana la cel mai apropiat service autorizat</ul> 
+    <ul class="lista-popup">&#x2713; Continuarea calatoriei</ul> 
+    <ul class="lista-popup">&#x2713; Parcare gratuita (pana la 5 zile)</ul> 
+    <ul class="lista-popup">&#x2713; Recuperare din afara carosabilului</ul> 
+    <ul class="lista-popup">&#x2713; Consultanta daune</ul> 
+    <ul class="lista-popup">&#x2713; Asistenta la intocmirea dosarului de dauna si urmarirea procesului de reparatie daca aceasta se efectueaza in service partener</ul> 
+    <ul class="lista-popup">&#x2713; Acoperire pe tot teritoriul Romaniei</ul> 
+</div>
+
+<div class="overlay-rutiera-plus"></div>
+
+<div class="popup-plus">
+  <button class="close2">&times;</button>
+  <h2 class="abonament-standard">Abonament Plus</h2> 
+    <ul class="lista-popup-plus">&#x2713; Tractare in caz de accident pana la cel mai apropiat service autorizat</ul> 
+    <ul class="lista-popup-plus">&#x2713; Continuarea calatoriei</ul> 
+    <ul class="lista-popup-plus">&#x2713; Parcare gratuita (pana la 5 zile)</ul> 
+    <ul class="lista-popup-plus">&#x2713; Recuperare din afara carosabilului</ul> 
+    <ul class="lista-popup-plus">&#x2713; Consultanta daune</ul> 
+    <ul class="lista-popup-plus">&#x2713; Asistenta la intocmirea dosarului de dauna si urmarirea procesului de reparatie daca aceasta se efectueaza in service partener</ul> 
+    <ul class="lista-popup-plus">&#x2713; Depanare la locul evenimentului</ul>
+    <ul class="lista-popup-plus">&#x2713; Tractare in caz de defectiune mecanica pana la cel mai apropiat service autorizat (1 interventie)</ul>
+    <ul class="lista-popup-plus">&#x2713; Masina la schimb din clasa compacta in regim “rent a car”</ul>
+    <ul class="lista-popup-plus">&#x2713; Consultanta daune</ul> 
+</div>
+
+<div class="overlay-rutiera3"></div>
+
+<div class="popup3">
+  <button class="close3">&times;</button>
+  <h2 class="abonament3">Abonament Premium</h2> 
+    <ul class="lista-popup3">&#x2713; Tractare in caz de accident pana la cel mai apropiat service autorizat</ul> 
+    <ul class="lista-popup3">&#x2713; Continuarea calatoriei</ul> 
+    <ul class="lista-popup3">&#x2713; Parcare gratuita (pana la 5 zile)</ul> 
+    <ul class="lista-popup3">&#x2713; Recuperare din afara carosabilului</ul> 
+    <ul class="lista-popup3">&#x2713; Consultanta daune</ul> 
+    <ul class="lista-popup3">&#x2713; Asistenta la intocmirea dosarului de dauna si urmarirea procesului de reparatie daca aceasta se efectueaza in service partener</ul> 
+    <ul class="lista-popup3">&#x2713; Depanare la locul evenimentului</ul>
+    <ul class="lista-popup3">&#x2713; Tractare in caz de defectiune mecanica pana la cel mai apropiat service autorizat (1 interventie)</ul>
+    <ul class="lista-popup3">&#x2713; Masina la schimb din clasa compacta in regim “rent a car”</ul>
+    <ul class="lista-popup3">&#x2713; Teritorialitate: Romania</ul> 
+    <ul class="lista-popup3">&#x2713; Masina la schimb din clasa compacta in regim “rent a car”</ul> 
+    <ul class="lista-popup3">&#x2713; Returul autoturismului dupa finalizarea reparatiei</ul> 
+    <ul class="lista-popup3">&#x2713; Bonus: Abonament Vancanta</ul> 
+</div>
+
+
+<div class="continuare-footer">
+    <p class="continuare-text">
+      Abonament Internațional <br>
+      de Asistență Rutieră
+    </p>
+    <p class="continuare-text-footer">
+      Abonament de asistenta rutiera pentru vacante fara griji! <br>
+Cu noi vei avea parte de siguranta si confort pe intreaga durata a calatoriei tale.
+    </p>
+
+    <div class="vacanta">
+
+      <img src="/poze/vacation.jpg" alt="" class="vacanta-poza">
+      <p class="abonament-vacanta">Abonament vacanta</p>
+      <button class="info-button4"></button>
+           <p class="price-pachet-vacanta">122 RON</p>
+           <p class="valabilitate">Valabilitate 15 zile consecutive de la data activarii <br>
+            Pretul include TVA</p>
+            <img src="/poze/asistenta-rutiera.jpg" alt="" class="asistenta_rutiera">
+            <p class="asistenta_rutiera_text">Asistenta  <br>rutiera 24/7</p>
+            <img src="/poze/continua-calatoria.jpg" alt="" class="continua_calatoria">
+            <p class="continua_calatoria_text">Continuarea <br> calatoriei</p>
+            <img src="/poze/tractare-icon.jpg" alt="" class="tractare_vacanta">
+            <p class="tractare_vacanta_text">Tractare</p>
+            <img src="/poze/call-center.jpg" alt="" class="call-center-vacanta">
+            <p class="call-center-vacanta-text">Call center 24/7</p>
+            <button class="buy-vacanta">CUMPARA</button>
+
+            <div class="overlay-vacanta"></div>
+
+<div class="popup-vacanta">
+  <button class="close-vacanta">&times;</button>
+  <h2 class="abonament-vacanta-popup">Abonament Vacanta</h2> 
+  <i class="popup-text">Titularul va beneficia, de Serviciile de Bază și de un singur Serviciu Extra la alegere.</i>
+    <p class="servicii-baza">Servicii de baza</p>
+  
+  <ul class="lista-popup3">&#x2713; Tractare</ul> 
+    <ul class="lista-popup3">&#x2713; Continuarea calatoriei</ul> 
+    <ul class="lista-popup3">&#x2713; Parcare gratuita (pana la 5 zile)</ul> 
+    <ul class="lista-popup3">&#x2713; Recuperare din afara carosabilului</ul> 
+    <ul class="lista-popup3">&#x2713; Consultanta daune</ul> 
+    <p class="extra">Servicii extra</p>
+    <div class="extra">
+    <ul class="lista-popup3">&#x2022; Masina de inlocuire</ul> 
+    <ul class="lista-popup3">&#x2022; Repatriere persoane</ul>  
+    <ul class="lista-popup3">&#x2022; Cazare</ul>  
+    </div>
+    
+</div>
+   
+
+
+</div>
+
+<div class="third-footer-rutiera">
+<p class="always-with-You">Suntem mereu aici pentru tine!</p>
+<img src="/poze/eu-flag.png" alt="" class="eu-flag"> 
+<p class="acoperire">Acoperire <br>europeana</p>
+<img src="/poze/clock-logo.webp" alt="" class="clock-photo">
+<p class="clock-p">Disponibili la orice ora</p>
+<img src="/poze/nigga.jpg" alt="" class="trust">
+<p class="trust-text">De incredere</p>
+<img src="/poze/simple.avif" alt="" class="simple">
+<p class="simple-text">Simplu</p>
+
+</div>
+
+
+</div>
+        
+<div class="payment-method">
+  <p class="convins" >Te am convins? Completeaza modalitatea ta de plata!</p>
+  <input type="radio" id="masterCard" name="card"> 
+  <label for="masterCard">MasterCard</label> <br> <br>
+  <input type="radio" id="visa" name="card"> 
+  <label for="visa">Visa</label> <br> <br>
+  <input type="radio" id="payPal" name="card"> 
+  <label for="payPal">PayPal</label> <br> <br>
+  <button id="mySubmit" type="submit">Submit</button>
+  <h1 id="myResult"></h1>
+    
+  <div class="servicii">
+    <div class="flexibilitate">
+
+      <img src="/poze/tow-trucl.png" alt="" class="tow-truck"> 
+      <p class="flex">Flexibilitate</p>
+      <p class="text-flex">Cand vorbim de tractari auto Mangalia, <br> vorbim de transportarea de <br>autoturisme defecte, avariate si noi <br>cu platforme auto specializate in <br> Mangalia, Bulgaria si intreaga tara.</p>
+    </div>
+
+    <div class="timp">
+      <img src="/poze/clock.png" alt="" class="clock">
+      <p class="program-lucru">Program de lucru</p>
+      <p class="program-text">Nu va faceti griji, serviciul nostru de asistenta rutiera Mangalia <br> va sta la dispozitie 24 ore din 24 ,7 zile din 7. <br> Vom trimite o echipa specializata imediat la locul indicat de dumneavoastra. <br> pentru a rezolva problema si pentru a va  <br>continua calatoria linistit.</p>
+    </div>
+    <div class="promp">
+      <img src="/poze/clepsidra.png" alt="" class="clepsidra">
+      <p class="promptitudine">Promptitudine</p>
+      <p class="promptitudine-text">Suntem siguri ca oricare ar fi problema pe care o intampinati , tractari auto Mangalia va va oferi solutia. In cel mai scurt timp posibil, cu maxim profesionalism si promptitudine.</p>
+    </div>
+  <div class="trianglu"></div>
+  <div class="trianglu2"></div>
+  </div>
+
+
+  
+      
+    </nav>
+    <script src="/nyscript.js"></script>
+    <script src="/test.js"></script>
+  </body>
+</html>

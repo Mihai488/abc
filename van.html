@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/code.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a van</title>
+</head>
+<body>
+    <nav>
+    <div class="footer-van">
+        <ul>
+          <li><a href="/main.html" class="menu-item" id="rent-a-car" target="_blank">Rent a Car</a></li>
+          <li><a href="#" class="menu-item" id="rent-a-van">Rent a Van</a></li>
+          <li><a href="/leasing.html" class="menu-item" id="leasing-operational" target="_blank">Leasing Operational</a></li>
+          <li><a href="/rutiera.html" class="menu-item" id="asistenta-rutiera" target="_blank" >Asistenta rutiera</a></li>
+        </ul>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+      <button class="email-btn" >Email</button>
+      <div class="email-div">autonom@yahoo.com</div>
+      <button class="whatsapp-btn" >Whatsapp</button>
+      <div class="whatsapp">+40 725 163 154</div>
+      <hr class="first-hr" />
+
+      <div class="second-footer">
+        <a href=""><img class="logo-van" src="/logo.jpg" alt="" /></a>
+        <p class="van">Rent-A-Van</p>
+        <button class="phone-van">+(4)07 21 35 14</button>
+        <button onclick="openNav()" class="open-side-menu">
+            <div class="bars">
+              <p class="bar-van">  </p>
+              <p class="bar-van">  </p>
+              <p class="bar-van">  </p>
+              </div>
+          </button>
+        <div id="myNav" class="overlay">
+
+ 
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+          
+            <div class="overlay-content">
+              <a  href="/about.html" target="_blank">About</a>
+              <a href="/contact.html">Contact</a>
+            </div>
+          
+          
+        </div>
+
+        <label type="text" class="ridicare">Ridicare</label> <br>
+        <select name="" class="custom-select-van">
+            <option value="disable" >Select pick-up location</option>
+            <option value="location1">Location 1</option>
+            <option value="location2">Location 2</option>
+            <option value="location3">Location 3</option>
+        </select> <br>
+
+        <label type="text" class="returnare">Returnare</label> <br>
+        <select name="" class="custom-select-van" id="returnare-van">
+            <option value="disable" >Select pick-up location</option>
+            <option value="location1">Location 1</option>
+            <option value="location2">Location 2</option>
+            <option value="location3">Location 3</option>
+        </select> <br>
+
+        <select name="" class="custom-select-data" id="data-ridicare">
+          <option value="disable" >Data</option>
+          <option value="location1">Martie</option>
+          <option value="location2">Februarie</option>
+          <option value="location3">Ianuarie</option>
+      </select>
+
+      <select name="" class="custom-select-ora" id="ora-ridicare">
+        <option value="disable" >12:00</option>
+        <option value="location1">18:00</option>
+        <option value="location2">19:00</option>
+        <option value="location3">20:00</option>
+    </select>
+
+    <select name="" class="custom-select-data" id="data-returnare">
+      <option value="disable" >Data</option>
+      <option value="location1">Iulie</option>
+      <option value="location2">Aprilie</option>
+      <option value="location3">Septembrie</option>
+  </select>
+
+  <select name="" class="custom-select-ora" id="ora-returnare">
+    <option value="disable" >12:00</option>
+    <option value="location1">13:00</option>
+    <option value="location2">14:00</option>
+    <option value="location3">15:00</option>
+</select>
+<button class="select-van">Alege <br> masina</button>
+
+   <div class="under_input">
+    <img class="van-logo" src="/poze/van-logo.png" alt="">
+    <hr class="van-line">
+
+   </div>
+   <div class="container reveal2">
+    <div class="choose-van">
+      <p class="p-choose-van">VEHICULE COMERCIALE IN LEASING OPERATIONAL</p>
+    <button class="all">TOATE</button>
+    <BUTTON class="pick-up" >PICK-UP</BUTTON>
+    <button class="mini-van">MINI-VAN</button>
+    <button class="van-btn">VAN</button>
+<div class="vehicles">
+    <div class="parent" >
+      <hr class="parent-orizontal">
+      <div class="child">
+        
+        <p class="price">De la 702 euro/luna</p>
+      </div>
+      <img src="/poze/dacia-van.jpg" alt="" class="dacia-photo">
+      <hr class="parent-orizontal2">
+      <div class="parent-vertical">
+    </div>
+    <p class="dacia-van">Dacia Joger</p>
+    <p class="util">Volum Util Marfa: L3H2</p>
+    <button class="rata">CALCULEAZA RATA</button>
+    <div class="parent-vertical_bottom"></div>
+    <hr class="parent-orizontal3">
+    <div class="parent-vertical-right"></div>
+
+    <div class="parent2">
+      <hr class="parent-orizontal-ford">
+      <div class="child-ford">
+        
+        <p class="price">De la 509 euro/luna</p>
+      </div>
+      <img src="/poze/ford.jpg" alt="" class="ford-photo">
+      <hr class="parent-orizontal2">
+      <div class="parent-vertical">
+    </div>
+    <p class="dacia-van">Ford Transit</p>
+    <p class="util">Volum Util Marfa: A6C2</p>
+    <button class="rata">CALCULEAZA RATA</button>
+    <div class="parent-vertical_bottom"></div>
+    <hr class="parent-orizontal3">
+    <div class="parent-vertical-right"></div>
+  </div>
+    
+    
+    </div>
+  </div>
+    
+  <div class="parent3">
+    <hr class="parent-orizontal-fiat">
+    <div class="child-fiat">
+      
+      <p class="price">De la 350 euro/luna</p>
+    </div>
+    <img src="/poze/fiat.jpg" alt="" class="fiat-photo">
+    <hr class="parent-orizontal2">
+    <div class="parent-vertical">
+  </div>
+  <p class="dacia-van">Fiat Multiplo</p>
+  <p class="util">Volum Util Marfa: B7A2</p>
+  <button class="rata">CALCULEAZA RATA</button>
+  <div class="parent-vertical_bottom"></div>
+  <hr class="parent-orizontal3">
+  <div class="parent-vertical-right"></div>
+    </div>
+    
+
+    <div class="parent4">
+      <hr class="parent-orizontal-multiplo">
+      <div class="child-multiplo">
+        
+        <p class="price">De la 120 euro/luna</p>
+      </div>
+      <img src="/poze/ford-transit.jpg" alt="" class="prelata-photo">
+      <hr class="parent-orizontal2">
+      <div class="parent-vertical">
+    </div>
+    <p class="prelata">Ford Transit Prelata</p>
+    <p class="util">Volum Util Marfa: N5A4</p>
+    <button class="rata">CALCULEAZA RATA</button>
+    <div class="parent-vertical_bottom"></div>
+    <hr class="parent-orizontal3">
+    <div class="parent-vertical-right"></div>
+      </div>
+</div>
+
+</div>
+    
+<div class="blue-section">
+  <p class="autonom">Autonom Rent-A-Car services</p>
+  <p class="autonom1"><b>Autonom</b> <br> Leisure Rentals </p>
+  <p class="autonom2"><b>Autonom</b> <br> Business Travel Rentals </p>
+  <p class="autonom3"><b>Autonom</b> <br> Business Mid-Term Rentals </p>
+  <p class="autonom-text">Holidays are way better behind the wheel of a car! <br>
+    Discover new local places or cross borders and explore with your friends or family.  <br>
+    In our fleet you will find cars which are perfectly suited for any needs, whether you travel light or heavy.  <br>
+    Our national network allows you to deliver or pick-up your car anywhere in Romania.</p> 
+    <p class="autonom-text2">Our car fleet includes a wide range of cars suited for any of your mobility needs.   <br>
+      We understand that flexibility is very important,<br>especially on your business trips.    <br>
+      You can find us NON STOP in any of the airports in Romania.</p> <br>
+      <p class="autonom-text3">We offer personalized car rental services <br> to meet any of your company's mobility needs.  <br>
+        Take advantage of the low risks, the high efficiency, <br> cost optimizations and the immediate.</p>  <br>
+</div>
+</div>
+</div>
+<div class="container reveal">
+<div class="text-container"> 
+<div class="last-page">
+<p class="last-page-p">The car rental solution by Autonom, the largest mobility network in Romania.</p>
+<p class="under-page-p">Autonom Rent a car offers car rental services in over 30 cities in Romania, Hungary and Serbia.  <br> </p>
+<p class="under-page-p2">  With a presence since 2005, Autonom has developed the most extensive mobility network on the Romanian market, <br> offering varied transportation solutions and car rental services.</p>
+</div>
+</div>
+</div>
+
+<div class="container reveal2">
+<div class="text-container">
+<div class="contact">
+<p class="contact-p">More quesitons? Contact us!</p>
+<input type="text" placeholder="Write a message" class="input-contact">
+</div>
+
+
+<button class="send">Trimite</button>
+
+
+
+<div class="continua"></div>
+<div class="stats">
+<div class="card" id="persoane">
+<img src="/poze/person-icon.jpg" alt="" class="person-icon" >
+<p class="unspe">11+ <br> </p>
+<p class="parteneri">Partners</p>
+</div>
+<div class="card" id="masini">
+<img src="/poze/car-logo.png" alt="" class="car-icon">
+<p class="sase-sute">600+</p>
+<p class="cars">Cars</p>
+</div>
+<div class="card" id="clock">
+<img src="/poze/clock-photo.webp" alt="" class="clock-icon">
+<p class="service">24/7</p>
+<p class="program">Services</p>
+</div>
+<div class="card">
+<img src="/poze/global.jpg" alt="" class="global-icon">
+<p class="global">Global activity</p>
+<p class="countries">Over 20 countries</p>
+</div>
+</div>
+
+<div class="footer2">
+<p class="phone">Contact us <br> <br>Phone: +40 725 163 154 <br> Email:autonom@gmail.com</p>
+<p class="terms"> Terms <br></p>
+<div class="line"></div>
+<a href="#"><p class="term-condition1">Terms and <br> conditions</p></a>
+<a href="#"><p class="term-condition2">Personal data</p></a>
+<a href="#"><p class="term-condition3">ANPC</p></a>
+<p class="terms2"> Reservations <br></p>
+<div class="line2"></div>
+<a href="#"><p class="term-condition4">Locations</p></a>
+<a href="#"><p class="term-condition5">FAQ</p></a>
+<p class="terms3"> Company <br></p>
+<div class="line3"></div>
+<a href="#"><p class="term-condition6">Contact</p></a>
+<a href="#"><p class="term-condition7">Blog</p></a>
+</div>
+
+
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h2>Te-am convins?</h2>
+</div>
+<div class="flip-box-back">
+<h2>Asteptam sa ne conactezi!</h2>
+</div>
+</div>
+</div>
+
+    
+    <script src="/nyscript.js"></script>
+  </nav>
+</body>
+</html>
