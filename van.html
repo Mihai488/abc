@@ -101,12 +101,12 @@
    <div class="container reveal2">
     <div class="choose-van">
       <p class="p-choose-van">VEHICULE COMERCIALE IN LEASING OPERATIONAL</p>
-    <button class="all">TOATE</button>
-    <BUTTON class="pick-up" >PICK-UP</BUTTON>
-    <button class="mini-van">MINI-VAN</button>
-    <button class="van-btn">VAN</button>
+    <button class="all" id="toate"  onclick="all()">TOATE</button>
+    <BUTTON class="pick-up" id="pickup" onclick="pickUp()" >PICK-UP</BUTTON>
+    <button class="mini-van" id="miniVan" onclick="miniVan()">MINI-VAN</button>
+    <button class="van-btn" id="vanCat" onclick="van()">VAN</button>
 <div class="vehicles">
-    <div class="parent" >
+    <div class="parent"  id="van1">
       <hr class="parent-orizontal">
       <div class="child">
         
@@ -123,7 +123,7 @@
     <hr class="parent-orizontal3">
     <div class="parent-vertical-right"></div>
 
-    <div class="parent2">
+    <div class="parent2" id="van2">
       <hr class="parent-orizontal-ford">
       <div class="child-ford">
         
@@ -145,7 +145,7 @@
     </div>
   </div>
     
-  <div class="parent3">
+  <div class="parent3" id="van3">
     <hr class="parent-orizontal-fiat">
     <div class="child-fiat">
       
@@ -160,11 +160,15 @@
   <button class="rata">CALCULEAZA RATA</button>
   <div class="parent-vertical_bottom"></div>
   <hr class="parent-orizontal3">
-  <div class="parent-vertical-right"></div>
+  <div class="parent-vertical-right">
+
+  </div>
     </div>
+
+  </div>
     
 
-    <div class="parent4">
+    <div class="parent4" id="van4">
       <hr class="parent-orizontal-multiplo">
       <div class="child-multiplo">
         
@@ -278,7 +282,7 @@
 </div>
 
     
-    <script src="/nyscript.js"></script>
+    <script src="/nyscript.js" defer></script>
   </nav>
 </body>
 </html>

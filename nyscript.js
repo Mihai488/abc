@@ -66,29 +66,87 @@ function topFunction() {
 }
 
 
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-
-let activeSlideIndex = 0;
-
-function showSlide(index) {
-  slides.forEach(slide => slide.style.opacity = 0);
-
-  slides[index].style.opacity = 1;
-  slides[index].style.zIndex = 1;
+function pickUp(){
+  const van1=document.getElementById("van1");
+    const van2=document.getElementById("van2");
+const van3=document.getElementById("van3");
+const van4=document.getElementById("van4");
+const toate=document.getElementById("toate");
+const pickup=document.getElementById("pickup");
+const minivan=document.getElementById("miniVan");
+const vanCat=document.getElementById("vanCat");
+pickup.style.textDecoration = 'underline';
+pickup.style.textDecorationColor = '#0000ff';
+pickup.style.textDecorationThickness = '2px';
+toate.style.textDecoration="none";
+minivan.style.textDecoration="none";
+vanCat.style.textDecoration="none";
+van1.style.visibility="visible";
+  van2.style.visibility="hidden";
+  van3.style.visibility="hidden";
+  van4.style.visibility="hidden";
 }
 
-showSlide(activeSlideIndex);
 
-prevBtn.addEventListener('click', () => {
-  activeSlideIndex = (activeSlideIndex - 1 + slides.length) % slides.length;
-  showSlide(activeSlideIndex);
+function miniVan(){
+  const van1=document.getElementById("van1");
+  const van2=document.getElementById("van2");
+  const van3=document.getElementById("van3");
+  const van4=document.getElementById("van4");
+  const toate=document.getElementById("toate");
+const pickup=document.getElementById("pickup");
+const minivan=document.getElementById("miniVan");
+const vanCat=document.getElementById("vanCat");
+minivan.style.textDecoration = 'underline';
+minivan.style.textDecorationColor = '#0000ff';
+minivan.style.textDecorationThickness = '2px';
+toate.style.textDecoration="none";
+pickup.style.textDecoration="none";
+vanCat.style.textDecoration="none";
+    van1.style.visibility="hidden";
+   van2.style.visibility="hidden";
+   van3.style.visibility="visible";
+   van4.style.visibility="visible";
+}
+
+function van(){
+  const van1=document.getElementById("van1");
+  const van2=document.getElementById("van2");
+  const van3=document.getElementById("van3");
+  const van4=document.getElementById("van4");
+  const toate=document.getElementById("toate");
+  const pickup=document.getElementById("pickup");
+  const minivan=document.getElementById("miniVan");
+  const vanCat=document.getElementById("vanCat");
+  vanCat.style.textDecoration = 'underline';
+  vanCat.style.textDecorationColor = '#0000ff';
+  vanCat.style.textDecorationThickness = '2px';
+  pickup.style.textDecoration="none";
+  toate.style.textDecoration="none";
+  minivan.style.textDecoration="none";
+    van1.style.visibility="hidden";
+   van2.style.visibility="visible";
+   van3.style.visibility="hidden";
+   van4.style.visibility="visible";
+}
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const rotateDiv = document.getElementById("rotate");
+  if (rotateDiv) {
+      rotateDiv.addEventListener("mouseover", () => {
+          rotateDiv.textContent = "Contacteaza-ne!";
+      });
+  }
 });
-
-nextBtn.addEventListener('click', () => {
-  activeSlideIndex = (activeSlideIndex + 1) % slides.length;
-  showSlide(activeSlideIndex);
+document.addEventListener("DOMContentLoaded", () => {
+  const rotateDiv = document.getElementById("rotate");
+  if (rotateDiv) {
+      rotateDiv.addEventListener("mouseout", () => {
+          rotateDiv.textContent = "Sunteti interesat de ceva?";
+      });
+  }
 });
 
 
