@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leasing operational</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="/code.css" />
  
   </head>
@@ -112,30 +113,79 @@
 </div>
 
 <div>
-  <p class="our-cars">Here are some cars we offer for renting.</p>
+  <p class="our-cars">La autonom gasiti o gramada de masini de inchiriat. <br>Cateva dintre modelele noastre sunt:</p>
   <div id="rotate">Sunteti interesat de ceva?</div>
 </div>
 
-<div class="slider">
-  <div class="slides">
-    <div class="slide">
-      <img  src="/poze/skoda1.5.jfif" alt="Image #1"> 
-      <div class="slide-text">Skoda Octavia 1.5</div>
-      <div class="slide-text-small">De la 230 euro/luna</div>
+
+<div class="car-slide">
+<div class="container swiper">
+  <div class="slider-wrapper ">
+    <div class="card-list swiper-wrapper">
+      <div class="card-item swiper-slide">
+        <img src="/poze/clio.webp" alt="Clio" class="user-image">
+        <h2 class="user-name">Renault Clio</h2>
+        <p class="user-profession">De la 230 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/cupra-formentor.webp" alt="Cupra" class="user-image">
+        <h2 class="user-name">Cupra Formentor</h2>
+        <p class="user-profession">De la 300 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/skoda1.5.jfif" alt="Skoda 1.5" class="user-image">
+        <h2 class="user-name">Skoda Octavia 1.5</h2>
+        <p class="user-profession">De la 240 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/skoda2.0.jpg" alt="Skoda 2.0" class="user-image">
+        <h2 class="user-name">Skoda Octavia 2.0</h2>
+        <p class="user-profession">De la 270 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/tiguan.avif" alt="Tiguan" class="user-image">
+        <h2 class="user-name">Tiguan</h2>
+        <p class="user-profession">De la 340 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/polo.jpg" alt="Polo" class="user-image">
+        <h2 class="user-name">Renault Polo</h2>
+        <p class="user-profession">De la 200 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+  
+      <div class="card-item swiper-slide">
+        <img src="/poze/peugeot.avif" alt="Peugeot" class="user-image">
+        <h2 class="user-name">Peugeot 508</h2>
+        <p class="user-profession">De la 350 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
+
+      <div class="card-item swiper-slide">
+        <img src="/poze/rav4.jfif" alt="Rav4" class="user-image">
+        <h2 class="user-name">Toyota Rav4</h2>
+        <p class="user-profession">De la 275 euro/luna</p>
+        <button class="message-button">Cumpara</button>
+      </div>
     </div>
-    <div class="slide">
-      <img  src="/poze/skoda2.0.jpg" alt="Image #2">
-      <div class="slide-text">Skoda Octavia 2.0</div>
-      <div class="slide-text-small">De la 250 euro/luna</div>
-    </div>
-    <div class="slide">
-      <img  src="/poze/cupra-formentor.webp" alt="Image #3">
-      <div class="slide-text">Cupra Formentor</div>
-      <div class="slide-text-small">De la 300 euro/luna</div>
-    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-slide-button swiper-button-prev"></div>
+    <div class="swiper-slide-button swiper-button-next"></div>
   </div>
-  <button class="prev" onclick="prevSlide()">&#10094</button>
-  <button class="next" onclick="nextSlide()">&#10095</button>
+</div>
+
 </div>
     
 
@@ -152,6 +202,7 @@
       
      
       <script src="/nyscript.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </nav>
   </body>
 </html>

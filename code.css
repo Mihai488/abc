@@ -3003,83 +3003,7 @@ position:relative;
 }
 
 
-.slider {
-  position: relative;
-  width: 600px;
-  left:70px;
-  overflow: hidden;
-  bottom:900px;
-}
-.slides {
-  display: flex;
-  width:100%;
 
-}
-
-.slide {
-  flex: 0 0 100%;
-  max-width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.slide.displaySlide {
-  display: block;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  padding: 10px 15px;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
-}
-
-.slide img{
-    width:600px;
-}
-.slide-text {
-  position: relative;
-  bottom:80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  font-size: 1.5rem;
-  text-align: center;
-  width: 600px;
-}
-@keyframes fade {
-  from { opacity: 0.5; }
-  to { opacity: 1; }
-}
-
-.slide-text-small {
-  position: relative;
-  bottom:80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px;
-  font-size: 1rem;
-  text-align: center;
-  width: 600px;
-}
 
 
 .our-cars{
@@ -3087,11 +3011,14 @@ position:relative;
   bottom:950px;
   font-size:30px;
   left:70px;
+  color:blue;
 }
 
 #rotate{
   width:100px;
   height: 100px;
+  position:relative;
+  bottom:500px;
   background-color: #0000ff;
   color:White;
   displaY:flex;
@@ -3106,4 +3033,99 @@ position:relative;
   
 }
 
+.card-list .card-item {
+  color: blue;
+  user-select: none;
+  padding: 35px;
+  flex-direction: column;
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
 
+.card-list .card-item .user-image {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+
+.card-list .card-item .user-name {
+  font-size: 1.5rem;
+  color: blue;
+  font-weight: 700;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: blue;
+  font-weight: 500;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: blue;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover {
+  border: 1px solid grey;
+  background: white;
+  color: black;
+}
+
+.swiper {
+  width: 600px;
+  height: 400px; /* Increased height to accommodate text */
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background-color: #0000ff;
+  height: 15px;
+  width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: grey;
+  margin-top: -50px;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+.car-slide{
+  position:relative;
+  bottom:1000px;
+}
